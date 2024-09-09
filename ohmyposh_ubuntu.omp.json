@@ -1,0 +1,125 @@
+{
+	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+	"blocks": [
+		{
+			"alignment": "left",
+			"newline": true,
+			"segments": [
+				{
+					"background": "#e95420",
+					"foreground": "#ffffff",
+					"leading_diamond": "\u256d\u2500\ue0b2",
+					"style": "diamond",
+					"template": " {{.Icon}} ",
+					"type": "os"
+				},
+				{
+					"background": "#f0f0f0",
+					"foreground": "#343434",
+					"powerline_symbol": "\ue0b0",
+					"properties": {
+						"home_icon": "~",
+						"folder_icon": "...",
+						"style": "agnoster_short",
+						"max_depth": 3
+					},
+					"style": "powerline",
+					"template": " \uf07c {{ .Path }} ",
+					"type": "path"
+				},
+				{
+					"background": "#5cec66",
+					"background_templates": [
+						"{{ if or (.Working.Changed) (.Staging.Changed) }}#FFF766{{ end }}",
+						"{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f26d50{{ end }}",
+						"{{ if gt .Ahead 0 }}#86D4DF{{ end }}",
+						"{{ if gt .Behind 0 }}#5cec66{{ end }}"
+					],
+					"foreground": "#343434",
+					"powerline_symbol": "\ue0b0",
+					"properties": {
+						"branch_icon": "\uf126 ",
+						"fetch_stash_count": true,
+						"fetch_status": true,
+						"fetch_upstream_icon": true
+					},
+					"style": "powerline",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+					"type": "git"
+				}
+			],
+			"type": "prompt"
+		},
+		{
+			"alignment": "left",
+			"newline": true,
+			"segments": [
+				{
+					"style": "plain",
+					"template": "│ Versions:",
+					"type": "text",
+					"foreground": "#e95420"
+				},
+				{
+					"properties": {
+						"fetch_version": true
+					},
+					"style": "plain",
+					"template": " (\ued0d {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }})",
+					"type": "node"
+				},
+				{
+					"properties": {
+						"fetch_version": true
+					},
+					"style": "plain",
+					"template": " (\udb81\udfd3 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }})",
+					"type": "go"
+				},
+				{
+					"properties": {
+						"fetch_version": true
+					},
+					"style": "plain",
+					"template": " (\ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }})",
+					"type": "julia"
+				},
+				{
+					"properties": {
+						"display_mode": "files",
+						"fetch_virtual_env": true
+					},
+					"style": "plain",
+					"template": " ({{ if .Venv }}{{ .Venv }} {{ end }}\ue606 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }})",
+					"type": "python"
+				},
+				{
+					"properties": {
+						"display_mode": "files",
+						"fetch_version": true
+					},
+					"style": "plain",
+					"template": " (\ue23e {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }})",
+					"type": "ruby"
+				}
+			],
+			"type": "prompt"
+		},
+		{
+			"alignment": "left",
+			"newline": true,
+			"segments": [
+				{
+					"foreground": "#e95420",
+					"style": "plain",
+					"template": "\u2570\u2500$ ",
+					"type": "text"
+				}
+			],
+			"type": "prompt"
+		}
+	],
+	"console_title_template": "{{ .Shell }} in {{ .Folder }}",
+	"final_space": false,
+	"version": 2
+}
