@@ -154,6 +154,9 @@ eval $(thefuck --alias tf)
 eval "$(zoxide init bash)"
 alias cd='z'
 
+# --- ripgrep/rg (better grep)
+alias grep='rg'
+
 # --- shortcut for update & upgrading apt and brew
 alias aptbrew='sudo apt-get update -y && sudo apt-get upgrade -y && brew update && brew upgrade'
 
@@ -164,13 +167,21 @@ alias py='python3'
 alias gitp='git push -u origin'
 alias gitc='git commit -m'
 alias gitca='git commit --amend -m'
+alias gitac='git add -A && git commit -m'
 alias gita='git add'
+alias gits='git status'
+alias gitpu='git pull'
+alias gitco='git checkout'
 
 # spacing after each command
-PROMPT_COMMAND='[[ $- == *i* ]] && [[ -n $PREV_PROMPT_COMMAND ]] && echo -e ""; PREV_PROMPT_COMMAND=1'
+# PROMPT_COMMAND='[[ $- == *i* ]] && [[ -n $PREV_PROMPT_COMMAND ]] && echo -e ""; PREV_PROMPT_COMMAND=1'
 
 # export language
 export LANGUAGE=en_AU.UTF-8
 
 # prioritize apt over brew and user specific package
 export PATH=/usr/bin:$PATH
+
+# oh-my-posh
+eval "$(oh-my-posh init bash --config /home/linuxbrew/.linuxbrew/Cellar/oh-my-posh/23.11.1/themes/custom.omp.json)"
+clear
