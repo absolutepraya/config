@@ -1,0 +1,7 @@
+micro -plugin install editorconfig
+micro -plugin install manipulator
+micro -plugin install autofmt
+micro -plugin install filemanager
+micro -plugin install detectindent
+micro -plugin install quoter
+micro -plugin install wc
