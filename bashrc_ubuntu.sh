@@ -183,7 +183,11 @@ alias pipw='/mnt/c/Python312/Scripts/pip3.exe'
 alias gitp='git push -u origin'
 alias gitc='git commit -m'
 alias gitca='git commit --amend -m'
+alais gitac='git add -A && git commit -m'
 alias gita='git add'
+alias gits='git status'
+alias gitpu='git pull'
+alias gitco='git checkout'
 
 # pyenv
 eval "$(pyenv init --path)"
