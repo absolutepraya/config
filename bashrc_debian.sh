@@ -185,3 +185,6 @@ export PATH=/usr/bin:$PATH
 # oh-my-posh
 eval "$(oh-my-posh init bash --config /home/linuxbrew/.linuxbrew/Cellar/oh-my-posh/23.11.1/themes/custom.omp.json)"
 clear
+
+# --- micro text editor typa shii
+alias m='micro'
