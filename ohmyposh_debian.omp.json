@@ -62,7 +62,7 @@
 				},
 				{
 					"style": "plain",
-					"template": "{{ .UserName }} ",
+					"template": "{{ .UserName }}@{{ .HostName }} ",
 					"type": "session"
 				},
 				{
