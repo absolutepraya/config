@@ -21,7 +21,8 @@
 						"home_icon": "~",
 						"folder_icon": "...",
 						"style": "agnoster_short",
-						"max_depth": 3
+						"max_depth": 2,
+						"hide_root_location": true
 					},
 					"style": "powerline",
 					"template": " \uf07c {{ .Path }} ",
@@ -74,7 +75,7 @@
 				{
 					"style": "plain",
 					"type": "battery",
-					"template": " {{ .Percentage }}% "
+					"template": "{{ .Percentage }}% "
 				},
 				{
 					"style": "plain",

@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 # --- oh my posh terminal
-eval "$(oh-my-posh init bash --config ~/.poshthemes/custom.omp.json)"
+eval "$(oh-my-posh init bash --config ~/custom.omp.json)"
 # to fix unrendered space color in vscode terminal
 clear
 
@@ -182,12 +182,25 @@ alias pipw='/mnt/c/Python312/Scripts/pip3.exe'
 # --- git command aliases
 alias gitp='git push -u origin'
 alias gitc='git commit -m'
-alias gitca='git commit --amend -m'
-alias gitac='git add -A && git commit -m'
+alias gitac='git add -A; git commit -m'
 alias gita='git add'
 alias gits='git status'
 alias gitpu='git pull'
 alias gitco='git checkout'
+alias gitl='git log'
+gitacp() {
+    if [ "$#" -ne 2 ]; then
+        echo "Usage: gitac \{\"commit message\"\} \{branch_name\}"
+        return 1
+    fi
+
+    local commit_message="$1"
+    local branch_name="$2"
+
+    git add -A
+    git commit -m "$commit_message"
+    git push origin "$branch_name"
+}
 
 # pyenv
 eval "$(pyenv init --path)"
@@ -249,3 +262,9 @@ export PATH=/usr/bin:$PATH
 
 # --- micro text editor typa shii
 alias m='micro'
+
+# --- alias for windows's flutter
+# alias flutter='/mnt/c/Users/daffa/AppData/Local/flutter/bin/flutter'
+
+# --- var to store rockyou location
+export rockyou='/home/praya/rockyou.txt'
