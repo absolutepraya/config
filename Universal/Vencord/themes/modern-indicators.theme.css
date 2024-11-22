@@ -1,0 +1,168 @@
+/**
+ * @name Modern Indicators
+ * @author LuckFire
+ * @version 2.2.3
+ * @description Updates Discord's indicators to feel more modern.
+ * @source https://github.com/discord-extensions/modern-indicators
+ * @invite vYdXbEzqDs
+ * @authorId 399416615742996480
+ * @updateUrl https://discord-extensions.github.io/modern-indicators/clients/modern-indicators.theme.css
+*/
+
+@import url('https://discord-extensions.github.io/modern-indicators/src/source.css');
+
+:root {
+  --indicator-border-size: 2px;
+  --indicator-border-style: solid;
+  --indicator-rounding: 0;
+}
+
+.theme-light {
+  --indicator-unread: var(--primary-900-hsl);
+  --indicator-unread-mention: var(--red-430-hsl);
+  --indicator-selected: var(--brand-500-hsl);
+  --indicator-connected: var(--green-430-hsl);
+}
+
+.theme-dark {
+  --indicator-unread: var(--primary-130-hsl);
+  --indicator-unread-mention: var(--red-400-hsl);
+  --indicator-selected: var(--brand-500-hsl);
+  --indicator-connected: var(--green-230-hsl);
+}
+
+:root {
+  --indicator-hover: var(--background-modifier-hover);
+  --indicator-unread-border: hsla(var(--indicator-unread)/0.75);
+  --indicator-unread-background: hsla(var(--indicator-unread)/0.05);
+  --indicator-unread-hover-background: hsla(var(--indicator-unread)/0.10);
+  --indicator-unread-mention-border: hsl(var(--indicator-unread-mention));
+  --indicator-unread-mention-background: hsla(var(--indicator-unread-mention)/0.15);
+  --indicator-unread-mention-hover-background: hsla(var(--indicator-unread-mention)/0.25);
+  --indicator-selected-border: hsl(var(--indicator-selected));
+  --indicator-selected-background: hsla(var(--indicator-selected)/0.15);
+  --indicator-selected-hover-background: hsla(var(--indicator-selected)/0.25);
+  --indicator-connected-border: hsl(var(--indicator-connected));
+  --indicator-connected-background: hsla(var(--indicator-connected)/0.15);
+  --indicator-connected-hover-background: hsla(var(--indicator-connected)/0.25);
+}
+
+.containerDefault-YUSmu3 {
+  margin: 2px 0;
+  border-radius: var(--indicator-rounding);
+  border-left: var(--indicator-border-size) var(--indicator-border-style) transparent;
+}
+.containerDefault-YUSmu3 .link-1_kTxV {
+  background: transparent !important;
+}
+.containerDefault-YUSmu3.wrapper-NhbLHG {
+  padding-left: 8px;
+}
+.containerDefault-YUSmu3:hover {
+  background-color: var(--indicator-hover);
+}
+.containerDefault-YUSmu3.wrapper-NhbLHG.modeSelected-3DmyhH, .containerDefault-YUSmu3:has(.modeSelected-3DmyhH) {
+  border-left-color: var(--indicator-selected-border);
+  background-color: var(--indicator-selected-background);
+}
+.containerDefault-YUSmu3.wrapper-NhbLHG.modeSelected-3DmyhH:hover, .containerDefault-YUSmu3:has(.modeSelected-3DmyhH):hover {
+  background-color: var(--indicator-selected-hover-background);
+}
+.containerDefault-YUSmu3.wrapper-NhbLHG.modeSelected-3DmyhH .link-1_kTxV svg, .containerDefault-YUSmu3:has(.modeSelected-3DmyhH) .link-1_kTxV svg {
+  color: var(--indicator-selected-border);
+}
+.containerDefault-YUSmu3:has(.modeUnread-3Cxepe) {
+  border-left-color: var(--indicator-unread-border);
+  background-color: var(--indicator-unread-background);
+}
+.containerDefault-YUSmu3:has(.modeUnread-3Cxepe):hover {
+  background-color: var(--indicator-unread-hover-background);
+}
+.containerDefault-YUSmu3:has(.modeUnread-3Cxepe) .unreadRelevant-2f-VSK {
+  display: none;
+}
+.containerDefault-YUSmu3:has(.modeUnread-3Cxepe) .link-1_kTxV svg {
+  color: var(--indicator-unread-border);
+}
+.containerDefault-YUSmu3:has(.mentionsBadge-3H1BKJ) {
+  border-left-color: var(--indicator-unread-mention-border);
+  background-color: var(--indicator-unread-mention-background);
+}
+.containerDefault-YUSmu3:has(.mentionsBadge-3H1BKJ):hover {
+  background-color: var(--indicator-unread-mention-hover-background);
+}
+.containerDefault-YUSmu3:has(.mentionsBadge-3H1BKJ) .link-1_kTxV svg {
+  color: var(--indicator-unread-mention-border);
+}
+.containerDefault-YUSmu3:has(.modeConnected-NrO4cP) {
+  border-left-color: var(--indicator-connected-border);
+  background-color: var(--indicator-connected-background);
+}
+.containerDefault-YUSmu3:has(.modeConnected-NrO4cP):hover {
+  background-color: var(--indicator-connected-hover-background);
+}
+.containerDefault-YUSmu3:has(.modeConnected-NrO4cP) .link-1_kTxV svg {
+  color: var(--indicator-connected-border);
+}
+
+.container-1Bj0eq .spineBorder-1-F4s1 {
+  left: 24px;
+}
+
+.categoryItem-Kc_HK_ {
+  margin: 2px 0;
+  padding-left: 8px;
+  border-radius: var(--indicator-rounding);
+  border-left: var(--indicator-border-size) var(--indicator-border-style) transparent;
+}
+.categoryItem-Kc_HK_:hover {
+  background-color: var(--indicator-hover);
+}
+.categoryItem-Kc_HK_:hover .itemInner-3e_4G4 {
+  background-color: transparent;
+}
+.categoryItem-Kc_HK_.selected-1-Z6gm {
+  border-left-color: var(--indicator-selected-border);
+  color: var(--interactive-active);
+  background-color: var(--indicator-selected-background);
+}
+.categoryItem-Kc_HK_.selected-1-Z6gm .itemInner-3e_4G4 {
+  background-color: transparent;
+}
+.categoryItem-Kc_HK_.selected-1-Z6gm svg {
+  color: var(--indicator-selected-border);
+}
+
+.channel-1Shao0 {
+  max-width: unset;
+  margin: 2px 0;
+  padding: 0 0 0 8px;
+  border-radius: var(--indicator-rounding);
+  border-left: var(--indicator-border-size) var(--indicator-border-style) transparent;
+}
+.channel-1Shao0:hover {
+  background-color: var(--indicator-hover);
+}
+.channel-1Shao0:has(.selected-26oxtA) {
+  border-left-color: var(--indicator-selected-border);
+  background-color: var(--indicator-selected-background);
+}
+.channel-1Shao0:has(.selected-26oxtA):hover {
+  background-color: var(--indicator-selected-hover-background);
+}
+.channel-1Shao0:has(.selected-26oxtA) .linkButtonIcon-7rsZcu, .channel-1Shao0:has(.selected-26oxtA) .closeButton-mupH76 {
+  color: var(--indicator-selected-border);
+}
+.channel-1Shao0:has(.highlighted-Q8Nll-) {
+  border-left-color: var(--indicator-unread-border);
+  background-color: var(--indicator-unread-background);
+}
+.channel-1Shao0:has(.highlighted-Q8Nll-):hover {
+  background-color: var(--indicator-unread-hover-background);
+}
+.channel-1Shao0:has(.highlighted-Q8Nll-) .linkButtonIcon-7rsZcu, .channel-1Shao0:has(.highlighted-Q8Nll-) .closeButton-mupH76 {
+  color: var(--indicator-unread-border);
+}
+.channel-1Shao0 .interactive-26HRN_ {
+  background: transparent;
+}

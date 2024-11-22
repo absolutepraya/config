@@ -268,3 +268,11 @@ alias m='micro'
 
 # --- var to store rockyou location
 export rockyou='/home/praya/rockyou.txt'
+
+# --- deno
+alias deno='/mnt/c/Users/daffa/.deno/bin/deno.exe'
+
+# --- directory aliases
+export doc="/mnt/c/Users/daffa/Documents/"
+export down="/mnt/c/Users/daffa/Downloads/"
+export daffa="/mnt/c/Users/daffa/"

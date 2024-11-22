@@ -184,7 +184,7 @@
 
 	// Custom CSS and JS loader
 	"vscode_custom_css.imports": [
-		"file:///C:/Users/daffa/Documents/vscode.css"
+		"file:///C:/Users/daffa/Documents/Config/Universal/Code/vscode.css"
 	],
 	// Custom VSCode UI CSS
 	"customvscodeuicss.css": "",
