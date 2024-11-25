@@ -1,7 +1,7 @@
 /* custom font */
-html, body {
+/* html, body {
   font-family: 'Inter'
-}
+} */
 
 /* remove shop and nitro buttons */
 [class^="channel_"][class*="container_"]:has(a[href="/store"]),
@@ -20,8 +20,14 @@ div[class^="channelTextArea"] div[class^="buttons_"] > button[class*=" colorBran
 }
 
 /* remove footer discover */
-.footer_f8ec41 {
+/* .footer_f8ec41 {
   display: none !important;
+} */
+
+/* fix server scroll */
+.scroller_fea3ef.none_c49869.scrollerBase_c49869 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /* windows curtain */

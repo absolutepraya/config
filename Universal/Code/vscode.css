@@ -162,10 +162,38 @@
 	align-items: center !important;
 }
 
-/* Add the inner white light effect on active tab */
+/* Add the inner white light effect on active tab, and round the tab */
 .tabs-container .tab.active.selected {
 	box-shadow: inset 0px -9px 6px -7px rgba(255, 255, 255, 0.4) !important;
+	border-radius: 7px !important;
 	/* background-color: #21252b !important; */
+}
+
+/* Tabs horizontal spacing */
+.tab {
+	border-radius: 7px !important;
+	margin-right: 5px !important;
+	overflow: hidden !important;
+}
+
+/* Add left margin to the first child element of `.tabs-container` */
+.tabs-container .tab:first-child {
+	margin-left: 5px !important;
+}
+
+/* Remove horizontal scroller */
+.monaco-scrollable-element .scrollbar.horizontal {
+	display: none !important;
+}
+
+.tabs-and-actions-container {
+	margin-bottom: 6px !important;
+}
+
+.tab.tab-actions-right.sizing-fit.has-icon.active.selected.tab-border-bottom .tab-border-bottom-container {
+	width: 100% !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
 }
 
 /* Attached filenames in Copilot chat */
@@ -173,3 +201,13 @@
 .monaco-icon-label-container .monaco-icon-suffix-container {
 	padding-top: 2px !important;
 }
+
+/* Round border editor */
+/* .breadcrumbs-below-tabs .breadcrumbs-control.backslash-path .monaco-scrollable-element  {
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important;
+}
+.part.panel.basepanel.bottom.pane-composite-part {
+	border-bottom-left-radius: 10px !important;
+	border-bottom-right-radius: 10px !important;
+} */
