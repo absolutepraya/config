@@ -20,14 +20,15 @@ div[class^="channelTextArea"] div[class^="buttons_"] > button[class*=" colorBran
 }
 
 /* remove footer discover */
-/* .footer_f8ec41 {
+.footer_d71945 {
+  /* padding-top: 0px; */
   display: none !important;
-} */
+}
 
 /* fix server scroll */
 .scroller_fea3ef.none_c49869.scrollerBase_c49869 {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+  /* margin-bottom: 0 !important; */
+  padding-bottom: 2px !important;
 }
 
 /* windows curtain */
