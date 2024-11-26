@@ -272,6 +272,9 @@ export rockyou='/home/praya/rockyou.txt'
 # --- deno
 alias deno='/mnt/c/Users/daffa/.deno/bin/deno.exe'
 
+# --- bun
+alias bun='/mnt/c/Users/daffa/.bun/bin/bun.exe'
+
 # --- directory aliases
 export doc="/mnt/c/Users/daffa/Documents/"
 export down="/mnt/c/Users/daffa/Downloads/"
