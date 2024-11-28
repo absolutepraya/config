@@ -1,0 +1,6 @@
+Changelog:
+• Developed a new boot wheel variant with more contrast by adding a different color outline.
+• Developed a new variant of "hand" for cursors: "link.cur", "pin.cur", "person.cur".
+• Added updated, older cursor variants: "help.cur", "unavailable.cur", "move.cur".
+• Developed a new, smoother outline for all cursors with outline.
+• Increased thickness of cursor lines: "cross.cur", "text.cur".

@@ -1,0 +1,10 @@
+Changes regarding VS Cursor 14.0:
+• To improve the contour, display and proportions, the shape of the hand has been changed in the following cursors: "move.cur", "link.cur", "pin.cur", "person.cur".
+• Reduced arrow tail length in cursors: "pointer.cur", help.cur", "work.ani".
+• Developed a new loading wheel for cursors: "work.ani", "busy.ani".
+• Improved white and black outlines of all cursors with an outline.
+• Changed the size of the pencil eraser in the "hand.cur" cursor.
+• Changed the location of the icon in the "help.cur" cursor.
+• Developed new softer and richer outer and inner shadows.
+• Changed cursor thickness: "cross.cur", "text.cur"
+• Changed the size of all cursors.

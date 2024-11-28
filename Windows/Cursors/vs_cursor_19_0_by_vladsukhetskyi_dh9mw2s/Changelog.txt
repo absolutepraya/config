@@ -1,0 +1,8 @@
+Changelog:
+• Changed the size of the icons in the cursors: "help.cur", "work.ani", "busy.ani", "unavailable.cur". Now the size of all cursors is not equal to integers and is brought to the same size standard.
+• Added icon outline to improve contrast for cursors: "help.cur", "work.ani", "busy.ani", "unavailable.cur".
+• Developed a new softer, more expressive outline for all cursors with an outline.
+• Developed a new shadow option that better emphasizes the outline of the cursors.
+• Developed a new hand design for cursors: "link.cur', "pin.cur", "person.cur".
+• Improved the quality of the gradient of the cursors: "work.ani", "busy.ani".
+• Added an updated version of inverse cursors: "text.cur", "cross.cur".

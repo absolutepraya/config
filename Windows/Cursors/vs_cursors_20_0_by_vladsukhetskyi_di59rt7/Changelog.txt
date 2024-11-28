@@ -1,0 +1,7 @@
+Changelog:
+• Developed new design for cursor "unavailable.cur" and new design "hands" for cursors: "link.cur", "pin.cur", "person.cur".
+• Developed new design and animation of the loading wheel for the cursors: "work.ani", "busy.ani".
+• Returned design of cursors "cross.cur" and "text.cur" from previous versions of my cursor sets.
+• Developed new icons for cursors: "help.cur", "pin.cur", "person.cur".
+• Developed a new outline for all cursors with outline.
+• Developed a new layered shadow.

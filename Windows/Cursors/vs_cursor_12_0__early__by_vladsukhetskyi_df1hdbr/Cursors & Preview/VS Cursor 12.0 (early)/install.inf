@@ -1,0 +1,53 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, 
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%text%,%10%\%CUR_DIR%\%hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%vert%,%10%\%CUR_DIR%\%horz%,%10%\%CUR_DIR%\%dgn1%,%10%\%CUR_DIR%\%dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%,%10%\%CUR_DIR%\%pin%,%10%\%CUR_DIR%\%person%"
+
+[Scheme.Cur]
+"pointer.cur"
+"help.cur"
+"work.ani"
+"busy.ani"
+"cross.cur"
+"text.cur"
+"hand.cur"
+"unavailiable.cur"
+"vert.cur"
+"horz.cur"
+"dgn1.cur"
+"dgn2.cur"
+"move.cur"
+"alternate.cur"
+"link.cur"
+"pin.cur"
+"person.cur"
+
+[Strings]
+CUR_DIR         	= "Cursors\VS Cursor 12.0 (early)"
+SCHEME_NAME     	= "VS Cursor 12.0 (early)"
+pointer		= "pointer.cur"
+help			= "help.cur"
+work			= "work.ani"
+busy			= "busy.ani"
+cross			= "cross.cur"
+text			= "text.cur"
+hand			= "hand.cur"
+unavailiable	= "unavailiable.cur"
+vert			= "vert.cur"
+horz			= "horz.cur"
+dgn1			= "dgn1.cur"
+dgn2			= "dgn2.cur"
+move			= "move.cur"
+alternate		= "alternate.cur"
+link			= "link.cur"
+pin			= "pin.cur"
+person		= "person.cur"

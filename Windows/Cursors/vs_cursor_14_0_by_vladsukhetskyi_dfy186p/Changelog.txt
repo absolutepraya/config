@@ -1,0 +1,10 @@
+VS Cursor 14.0 changelog:
+• Increased arrow tail length in cursors: "pointer.cur", help.cur", "work.ani".
+• Updated mini icons for cursors: "help.cur", pin.cur", "person.cur".
+• Developed a new loading wheel for cursors: "work.ani", "busy.ani".
+• To improve the display on the screen, the shape and size of the cursors have been changed: "cross.cur", "text.cur", "hand.cur", "vert.cur", "horz.cur", "dgn1.cur", "dgn2 .cur", "alternate.cur".
+• A new version of the "unavailable.cur" cursor has been developed.
+• To improve the display and proportions, the shape of the hand in the cursors has been changed: "link.cur", "pin.cur", "person.cur".
+• A lot of work has been done to improve the white and black contours, improved thickness and smoothness.
+• Developed a new softer and darker shadow for cursors that have it.
+• Redesigned all inner shadows for cursors: "work.ani", "busy.ani", "unavailable.cur".

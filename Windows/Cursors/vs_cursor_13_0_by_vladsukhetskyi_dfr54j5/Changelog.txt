@@ -1,0 +1,10 @@
+VS Cursor 13.0 changelog:
+• Increased tail length for cursors: "pointer.cur", "help.cur", "work.ani".
+• Changed gray to white in cursors: "help.cur", "unavailiable.cur".
+• Developed a new loading wheel for cursors: "work.ani", "busy.ani".
+• Reworked cursor sizes: "hand.cur", "vert.cur", "horz.cur", "dgn1.cur", "dgn2.cur".
+• Increased icon size for "unavailiable.cur" cursor.
+• Developed a new variant of the cursor "move.cur".
+• Developed a new version of the hand for cursors: "move.cur", "link.cur", "pin.cur", person.cur".
+• Improved display of white and black outlines on different backgrounds.
+• Developed a new two-layer shadow for all cursors.

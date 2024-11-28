@@ -1,5 +1,6 @@
-body {
-	font-family: 'Inter', sans-serif;
+/* UI font */
+.windows .monaco-workbench {
+    font-family: 'Inter';
 }
 
 /* File Explorer item label */
