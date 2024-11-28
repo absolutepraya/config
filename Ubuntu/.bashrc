@@ -279,3 +279,6 @@ alias bun='/mnt/c/Users/daffa/.bun/bin/bun.exe'
 export doc="/mnt/c/Users/daffa/Documents/"
 export down="/mnt/c/Users/daffa/Downloads/"
 export daffa="/mnt/c/Users/daffa/"
+
+# --- notepad++
+alias note="/mnt/c/Program\ Files/Notepad++/notepad++.exe"

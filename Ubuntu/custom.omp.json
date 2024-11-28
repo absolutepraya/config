@@ -68,17 +68,6 @@
 				},
 				{
 					"style": "plain",
-					"template": "—— \udb85\udc0b",
-					"type": "text",
-					"foreground": "#e95420"
-				},
-				{
-					"style": "plain",
-					"type": "battery",
-					"template": "{{ .Percentage }}% "
-				},
-				{
-					"style": "plain",
 					"template": "—— ver.",
 					"type": "text",
 					"foreground": "#e95420"

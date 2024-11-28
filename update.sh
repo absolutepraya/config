@@ -5,6 +5,9 @@ cat /mnt/c/Users/daffa/AppData/Roaming/Vencord/settings/quickCss.css > /mnt/c/Us
 cat /mnt/c/Users/daffa/AppData/Roaming/Vencord/settings/settings.json > /mnt/c/Users/daffa/Documents/Config/Universal/Vencord/settings.json
 cp -f /mnt/c/Users/daffa/AppData/Roaming/Vencord/themes/* /mnt/c/Users/daffa/Documents/Config/Universal/Vencord/themes/
 
+# notepad++
+cp -f /mnt/c/Users/daffa/AppData/Roaming/Notepad++/themes/* /mnt/c/Users/daffa/Documents/Config/Universal/Notepad++/themes/
+
 # ubuntu
 cat ~/.bashrc > /mnt/c/Users/daffa/Documents/Config/Ubuntu/.bashrc
 cat ~/custom.omp.json > /mnt/c/Users/daffa/Documents/Config/Ubuntu/custom.omp.json
@@ -27,4 +30,4 @@ git add -A
 git commit -m "Config update"
 git push origin config
 
-echo "------------    Pushed    ------------"
+echo "------------   Pushed 💨   ------------"
