@@ -20,4 +20,11 @@ brew list > /mnt/c/Users/daffa/Documents/Config/Universal/Homebrew/brew_list.txt
 cat ~/.config/micro/settings.json > /mnt/c/Users/daffa/Documents/Config/Universal/Micro/settings.json
 cat ~/.config/micro/bindings.json > /mnt/c/Users/daffa/Documents/Config/Universal/Micro/bindings.json
 
-echo "All updated"
+echo "------------\nAll updated!\n------------"
+
+# git push
+git add -A
+git commit -m "Config update"
+git push origin config
+
+echo "------------\n   Pushed   \n------------"
