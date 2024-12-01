@@ -41,6 +41,19 @@ div[class^="channelTextArea"] div[class^="buttons_"] > button[class*=" colorBran
   border-radius: 4px;
 }
 
+/* new message forum @ community server */
+.newTopicsBarContainer_cf58b5.barBase_cf58b5.containerMarginTop_cf58b5 * {
+  color: white !important;
+  fill: white !important;
+}
+
+/* topic summary scroller disable round */
+.topicsScroller_cf58b5.thin_c49869.scrollerBase_c49869.fade_c49869 {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
 
 /* .unreadMentionsIndicatorBottom_fea3ef {
   transform: translate(-5px, 1px);

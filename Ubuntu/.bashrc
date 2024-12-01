@@ -220,9 +220,9 @@ alias vol='python3 /mnt/c/Users/daffa/Documents/CTF\ Tools/volatility3/vol.py'
 # alias node16='/mnt/c/Users/daffa/AppData/Roaming/nvm/v16.20.2/node.exe'
 # alias npm16='/mnt/c/Users/daffa/AppData/Roaming/nvm/v16.20.2/npm'
 # alias npx16='/mnt/c/Users/daffa/AppData/Roaming/nvm/v16.20.2/npx'
-alias node='/mnt/c/Users/daffa/AppData/Roaming/nvm/v21.7.3/node.exe'
-alias npm='/mnt/c/Users/daffa/AppData/Roaming/nvm/v21.7.3/npm'
-alias npx='/mnt/c/Users/daffa/AppData/Roaming/nvm/v21.7.3/npx'
+alias nodew='/mnt/c/Users/daffa/AppData/Roaming/nvm/v21.7.3/node.exe'
+alias npmw='/mnt/c/Users/daffa/AppData/Roaming/nvm/v21.7.3/npm'
+alias npxw='/mnt/c/Users/daffa/AppData/Roaming/nvm/v21.7.3/npx'
 
 # alias to open explorer on current dir
 alias exp="explorer.exe ."
@@ -282,3 +282,6 @@ export daffa="/mnt/c/Users/daffa/"
 
 # --- notepad++
 alias note="/mnt/c/Program\ Files/Notepad++/notepad++.exe"
+
+# -- dfx (icp)
+. "$HOME/.local/share/dfx/env"
