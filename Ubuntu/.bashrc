@@ -190,7 +190,7 @@ alias gitco='git checkout'
 alias gitl='git log'
 gitacp() {
     if [ "$#" -ne 2 ]; then
-        echo "Usage: gitac \{\"commit message\"\} \{branch_name\}"
+        echo "Usage: gitac \"commit message\" branch-name"
         return 1
     fi
 
@@ -216,13 +216,10 @@ alias vol='python3 /mnt/c/Users/daffa/Documents/CTF\ Tools/volatility3/vol.py'
 # alias for nvm win
 # alias nvmw='/mnt/c/Users/daffa/AppData/Roaming/nvm/nvm.exe'
 
-# alias for node win
-# alias node16='/mnt/c/Users/daffa/AppData/Roaming/nvm/v16.20.2/node.exe'
-# alias npm16='/mnt/c/Users/daffa/AppData/Roaming/nvm/v16.20.2/npm'
-# alias npx16='/mnt/c/Users/daffa/AppData/Roaming/nvm/v16.20.2/npx'
-alias nodew='/mnt/c/Users/daffa/AppData/Roaming/nvm/v21.7.3/node.exe'
-alias npmw='/mnt/c/Users/daffa/AppData/Roaming/nvm/v21.7.3/npm'
-alias npxw='/mnt/c/Users/daffa/AppData/Roaming/nvm/v21.7.3/npx'
+# alias for node win (v23.3.0)
+alias node='/mnt/c/Program\ Files/nodejs/node.exe'
+alias npm='/mnt/c/Program\ Files/nodejs/npm'
+alias npx='/mnt/c/Program\ Files/nodejs/npx'
 
 # alias to open explorer on current dir
 alias exp="explorer.exe ."
