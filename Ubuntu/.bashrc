@@ -173,7 +173,10 @@ alias aptbrew='sudo apt-get update -y && sudo apt-get upgrade -y && brew update 
 alias py='python3'
 
 # --- open vsc in windows instead
-alias code='/mnt/c/Users/daffa/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe "$@" >/dev/null 2>&1'
+code() {
+     /mnt/c/Users/daffa/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe "$@" >/dev/null 2>&1 & disown
+}
+# alias code='/mnt/c/Users/daffa/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe "$@" >/dev/null 2>&1'
 
 # --- use windows' python
 alias pyw='/mnt/c/Python312/python.exe'
@@ -260,9 +263,6 @@ export PATH=/usr/bin:$PATH
 # --- micro text editor typa shii
 alias m='micro'
 
-# --- alias for windows's flutter
-# alias flutter='/mnt/c/Users/daffa/AppData/Local/flutter/bin/flutter'
-
 # --- var to store rockyou location
 export rockyou='/home/praya/rockyou.txt'
 
@@ -280,5 +280,33 @@ export daffa="/mnt/c/Users/daffa/"
 # --- notepad++
 alias note="/mnt/c/Program\ Files/Notepad++/notepad++.exe"
 
-# -- dfx (icp)
+# --- dfx (icp)
 . "$HOME/.local/share/dfx/env"
+
+# --- run windows's flutter in ubuntu
+flutter() {
+    # Translate the current WSL directory to Windows path
+    local win_dir
+    win_dir=$(wslpath -w "$PWD")
+    
+    # Check if the path translation was successful
+    if [[ -z "$win_dir" ]]; then
+        echo "Error: Unable to translate the current directory to Windows path."
+        return 1
+    fi
+    
+    # Assemble Flutter arguments with proper quoting
+    local args=("$@")
+    local flutter_args=""
+    for arg in "${args[@]}"; do
+        # Escape any existing double quotes in arguments
+        arg="${arg//\"/\\\"}"
+        flutter_args+="$arg "
+    done
+    # Trim trailing space
+    flutter_args=${flutter_args% }
+    
+    # Execute Flutter command via cmd.exe using 'flutter' (not 'flutter.exe')
+    cmd.exe /C "flutter $flutter_args"
+}
+
