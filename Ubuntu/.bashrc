@@ -227,9 +227,6 @@ alias npx='/mnt/c/Program\ Files/nodejs/npx'
 # alias to open explorer on current dir
 alias exp="explorer.exe ."
 
-# alias for heroku
-# alias heroku="/mnt/c/Program\ Files/heroku/bin/heroku"
-
 # alias for HxD
 alias hxd="/mnt/c/Program\ Files/HxD/HxD.exe"
 

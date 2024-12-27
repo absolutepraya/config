@@ -335,5 +335,6 @@
 	"terminal.integrated.automationProfile.windows": {},
 	"typescript.experimental.updateImportsOnPaste": true,
 	"typescript.format.semicolons": "insert",
-	"typescript.preferences.quoteStyle": "single"
+	"typescript.preferences.quoteStyle": "single",
+	"window.customTitleBarVisibility": "windowed"
 }
