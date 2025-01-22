@@ -179,8 +179,8 @@ code() {
 # alias code='/mnt/c/Users/daffa/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe "$@" >/dev/null 2>&1'
 
 # --- use windows' python
-alias pyw='/mnt/c/Python312/python.exe'
-alias pipw='/mnt/c/Python312/Scripts/pip3.exe'
+# alias pyw='/mnt/c/Python312/python.exe'
+# alias pipw='/mnt/c/Python312/Scripts/pip3.exe'
 
 # --- git command aliases
 alias gitp='git push -u origin'
@@ -219,10 +219,13 @@ alias vol='python3 /mnt/c/Users/daffa/Documents/CTF\ Tools/volatility3/vol.py'
 # alias for nvm win
 # alias nvmw='/mnt/c/Users/daffa/AppData/Roaming/nvm/nvm.exe'
 
-# alias for node win (v23.3.0)
+# alias for node win (v22)
 alias node='/mnt/c/Program\ Files/nodejs/node.exe'
 alias npm='/mnt/c/Program\ Files/nodejs/npm'
 alias npx='/mnt/c/Program\ Files/nodejs/npx'
+alias ni='/mnt/c/Program\ Files/nodejs/npm install'
+alias nr='/mnt/c/Program\ Files/nodejs/npm run'
+alias nrd='/mnt/c/Program\ Files/nodejs/npm run dev'
 
 # alias to open explorer on current dir
 alias exp="explorer.exe ."
