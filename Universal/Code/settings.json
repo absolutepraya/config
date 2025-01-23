@@ -336,5 +336,6 @@
 	"typescript.experimental.updateImportsOnPaste": true,
 	"typescript.format.semicolons": "insert",
 	"typescript.preferences.quoteStyle": "single",
-	"window.customTitleBarVisibility": "windowed"
+	"window.customTitleBarVisibility": "windowed",
+	"git.confirmSync": false
 }

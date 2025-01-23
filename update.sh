@@ -23,6 +23,9 @@ brew list > /mnt/c/Users/daffa/Documents/Config/Universal/Homebrew/brew_list.txt
 cat ~/.config/micro/settings.json > /mnt/c/Users/daffa/Documents/Config/Universal/Micro/settings.json
 cat ~/.config/micro/bindings.json > /mnt/c/Users/daffa/Documents/Config/Universal/Micro/bindings.json
 
+# zen
+cp -rf "/mnt/c/Users/daffa/AppData/Roaming/zen/Profiles/p1z6hl1y.Default (alpha)/chrome/"* "/mnt/c/Users/daffa/Documents/Config/Universal/Zen Browser/"
+
 echo "------------ All updated! ------------"
 
 # git push

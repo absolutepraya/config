@@ -219,6 +219,9 @@ alias vol='python3 /mnt/c/Users/daffa/Documents/CTF\ Tools/volatility3/vol.py'
 # alias for nvm win
 # alias nvmw='/mnt/c/Users/daffa/AppData/Roaming/nvm/nvm.exe'
 
+# alias for clear
+alias c="clear"
+
 # alias for node win (v22)
 alias node='/mnt/c/Program\ Files/nodejs/node.exe'
 alias npm='/mnt/c/Program\ Files/nodejs/npm'

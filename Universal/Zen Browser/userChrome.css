@@ -1,0 +1,48 @@
+/* === GLOBAL APP FONT */
+* {
+    font-family: "Inter";
+}
+
+/* === URL BAR === */
+#identity-box {
+	display: none !important;
+}
+.urlbar-input-container {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+#tracking-protection-icon-container {
+	display: none !important;
+}
+#page-action-buttons {
+	display: none !important;
+}
+html#main-window body hbox#zen-main-app-wrapper hbox#browser toolbox#navigator-toolbox.browser-toolbox-background toolbar#nav-bar.browser-toolbar.chromeclass-location hbox#nav-bar-customization-target.customization-target toolbaritem#urlbar-container div#urlbar hbox.urlbar-input-container moz-input-box.urlbar-input-box {
+    font-family: "JetBrains Mono", monospace !important;
+}
+
+/* === TAB BAR === */
+#tabbrowser-arrowscrollbox .tabbrowser-tab[selected] .tab-stack .tab-background {
+    /* background-color: #FFFFFF !important; */
+    /* opacity: 5%; */
+    /* border: 2px solid rgba(255, 255, 255, 0.2) !important; */
+}
+
+/* === ESSENTIALS BAR === */
+#zen-essentials-container .tabbrowser-tab .tab-stack .tab-background {
+    /* opacity: 0; */
+}
+
+/* === WORKSPACE === */
+html#main-window body hbox#zen-main-app-wrapper hbox#browser toolbox#navigator-toolbox.browser-toolbox-background hbox#titlebar toolbar#TabsToolbar.browser-toolbar.browser-titlebar toolbar#zen-sidebar-icons-wrapper.browser-toolbar.customization-target.zen-dont-hide-on-fullscreen toolbarbutton#zen-workspaces-button.toolbarbutton-1.zen-sidebar-action-button hbox.zen-workspace-sidebar-wrapper div.zen-workspace-sidebar-icon {
+    margin-right: 3px !important;
+}
+div.zen-workspace-sidebar-name {
+    font-family: "JetBrains Mono", monospace !important;
+}
+html#main-window body hbox#zen-main-app-wrapper hbox#browser toolbox#navigator-toolbox.browser-toolbox-background hbox#titlebar toolbar#TabsToolbar.browser-toolbar.browser-titlebar hbox.toolbar-items hbox#TabsToolbar-customization-target.customization-target tabs#tabbrowser-tabs hbox#zen-current-workspace-indicator hbox#zen-current-workspace-indicator-name {
+    font-family: "JetBrains Mono", monospace !important;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
