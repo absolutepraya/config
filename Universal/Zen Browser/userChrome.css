@@ -22,10 +22,33 @@ html#main-window body hbox#zen-main-app-wrapper hbox#browser toolbox#navigator-t
 }
 
 /* === TAB BAR === */
-#tabbrowser-arrowscrollbox .tabbrowser-tab[selected] .tab-stack .tab-background {
+arrowscrollbox#tabbrowser-arrowscrollbox tab.tabbrowser-tab[selected], div#vertical-pinned-tabs-container tab.tabbrowser-tab[selected] {
     /* background-color: #FFFFFF !important; */
     /* opacity: 5%; */
     /* border: 2px solid rgba(255, 255, 255, 0.2) !important; */
+    
+    border-top: 1px solid #6f6e74 !important;
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,0.7);
+    z-index: 100 !important;
+}
+arrowscrollbox#tabbrowser-arrowscrollbox tab.tabbrowser-tab, div#vertical-pinned-tabs-container tab.tabbrowser-tab {
+    margin-bottom: 4px !important;
+}
+div#vertical-pinned-tabs-container tab.tabbrowser-tab:last-child {
+    margin-bottom: 0 !important;
+} 
+hbox#tabbrowser-arrowscrollbox-periphery {
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+}
+arrowscrollbox#tabbrowser-arrowscrollbox tab.tabbrowser-tab .tab-stack .tab-background, div#vertical-pinned-tabs-container tab.tabbrowser-tab stack.tab-stack .tab-background {
+    margin: 0 !important;
+}
+image.tab-icon-overlay {
+    background-color: #000000 !important;
+}
+html#main-window body hbox#zen-main-app-wrapper hbox#browser toolbox#navigator-toolbox.browser-toolbox-background hbox#titlebar toolbar#TabsToolbar.browser-toolbar.browser-titlebar hbox.toolbar-items hbox#TabsToolbar-customization-target.customization-target tabs#tabbrowser-tabs div#vertical-pinned-tabs-container {
+    overflow: visible !important;
 }
 
 /* === ESSENTIALS BAR === */
