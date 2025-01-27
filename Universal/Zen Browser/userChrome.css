@@ -11,6 +11,10 @@
 	padding-left: 10px !important;
 	padding-right: 10px !important;
 }
+#urlbar[open] .urlbar-input-container {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
 #tracking-protection-icon-container {
 	display: none !important;
 }
@@ -19,6 +23,12 @@
 }
 html#main-window body hbox#zen-main-app-wrapper hbox#browser toolbox#navigator-toolbox.browser-toolbox-background toolbar#nav-bar.browser-toolbar.chromeclass-location hbox#nav-bar-customization-target.customization-target toolbaritem#urlbar-container div#urlbar hbox.urlbar-input-container moz-input-box.urlbar-input-box {
     font-family: "JetBrains Mono", monospace !important;
+}
+#urlbar-input {
+	  font-family: "JetBrains Mono", monospace !important;
+}
+#urlbar-input[aria-expanded="true"] {
+	  font-size: 1.4rem !important;
 }
 
 /* === TAB BAR === */
@@ -165,7 +175,7 @@ body:has(
 		content: '' !important;
 		position: absolute !important;
 		top: 4px !important;
-        z-index: 500 !important;
+    z-index: 500 !important;
 		left: 2px !important;
 		height: 2px !important; /* Height of the top background */
 		max-width: calc(100% - 16px) !important; /* Adjust for margins */
