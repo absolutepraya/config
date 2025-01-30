@@ -11,6 +11,7 @@
 	padding-left: 10px !important;
 	padding-right: 10px !important;
 }
+
 #urlbar[open] .urlbar-input-container {
 	padding-left: 40px !important;
 	padding-right: 40px !important;
@@ -29,6 +30,12 @@ html#main-window body hbox#zen-main-app-wrapper hbox#browser toolbox#navigator-t
 }
 #urlbar-input[aria-expanded="true"] {
 	  font-size: 1.4rem !important;
+}
+#urlbar:not([open]) #urlbar-background {
+    background-color: #00000000 !important;
+}
+#urlbar-container {
+	background-color: #00000000 !important;
 }
 
 /* === TAB BAR === */

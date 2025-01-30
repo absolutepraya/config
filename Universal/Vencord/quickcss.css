@@ -32,13 +32,15 @@ div[class^="channelTextArea"] div[class^="buttons_"] > button[class*=" colorBran
 }
 
 /* windows curtain */
-.winButtonMinMax_a934d8.winButton_a934d8::after {
+.winButtonMinMax__421ed.winButton__421ed::after {
   background-color: #383d48 !important;
   border-radius: 4px;
+  height: 4px;
 }
-.winButtonClose_a934d8.winButton_a934d8::after {
+.winButtonClose__421ed.winButton__421ed::after {
   background-color: #383d48 !important;
   border-radius: 4px;
+  height: 4px;
 }
 
 /* new message forum @ community server */
@@ -54,78 +56,3 @@ div[class^="channelTextArea"] div[class^="buttons_"] > button[class*=" colorBran
   border-bottom-left-radius: 2%;
   border-bottom-right-radius: 2%;
 }
-
-/* .unreadMentionsIndicatorBottom_fea3ef {
-  transform: translate(-5px, 1px);
-}
-
-.unreadMentionsIndicatorTop_fea3ef {
-  transform: translate(-5px, 1px);
-}
-
-.peopleListItem_d51464 {
-  border-radius: 10px;
-  margin-top: 12px;
-  border-width: 0;
-}
-
-.peopleListItem_d51464:hover,
-.peopleListItem_d51464:active,
-.peopleListItem_d51464:focus {
-  border-radius: 10px;
-  margin-top: 12px;
-}
-
-.peopleList_e0840f.auto_eed6a8.scrollerBase_eed6a8 > .content_eed6a8 {
-  padding-bottom: 16px;
-}
-
-.peopleList_e0840f.auto_eed6a8.scrollerBase_eed6a8 > .content_eed6a8:hover,
-.peopleList_e0840f.auto_eed6a8.scrollerBase_eed6a8 > .content_eed6a8:active,
-.peopleList_e0840f.auto_eed6a8.scrollerBase_eed6a8 > .content_eed6a8:focus {
-  padding-bottom: 16px;
-}
-
-.wrapper_c51b4e.avatar_f3939d {
-  transform: translateY(4px);
-}
-
-.peopleList_e0840f.auto_eed6a8.scrollerBase_eed6a8 {
-  margin-bottom: 30px !important;
-}
-
-.actionIcon_f6f816 path {
-  fill: #dddedf;
-}
-
-.defaultColor_a595eb.text-xs\/medium_dc00ef.statusText_e66732 {
-  color: #dddedf;
-}
-
-.pencilIcon_e66732 path {
-  fill: #dddedf;
-}
-
-.overlayBottom_ba4b17 {
-  opacity: 0;
-}
-
-.avatar_f94206.biteSize_f94206.clickable_f94206 {
-  border-width: 0;
-}
-
-.pointerEvents_c51b4e {
-  fill: "#9c84ef";
-} */
-
-/* .biteSizeInner_c69a7b.userProfileInner_c69a7b.biteSizeInnerThemed_c69a7b {
-  background-color: black;
-}
-
-.userProfileModalInner_c69a7b.userProfileInner_c69a7b.fullSizeInnerThemed_c69a7b {
-  background-color: black;
-}
-
-.sectionTitle_a6ae9b {
-  opacity: 0;
-} */
