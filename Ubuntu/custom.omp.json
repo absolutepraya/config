@@ -21,7 +21,7 @@
 						"home_icon": "~",
 						"folder_icon": "...",
 						"style": "agnoster_short",
-						"max_depth": 2,
+						"max_depth": 1,
 						"hide_root_location": true
 					},
 					"style": "powerline",
@@ -57,18 +57,7 @@
 			"segments": [
 				{
 					"style": "plain",
-					"template": "│ \uf415 ",
-					"type": "text",
-					"foreground": "#e95420"
-				},
-				{
-					"style": "plain",
-					"template": "{{ .UserName }}@{{ .HostName }} ",
-					"type": "session"
-				},
-				{
-					"style": "plain",
-					"template": "—— ver.",
+					"template": "│ \udb81\udecd Versions:",
 					"type": "text",
 					"foreground": "#e95420"
 				},
@@ -124,7 +113,7 @@
 				{
 					"foreground": "#e95420",
 					"style": "plain",
-					"template": "\u2570\u2500\udb81\ude27 ",
+					"template": "\u2570\u2500\uf04b ",
 					"type": "text"
 				}
 			],

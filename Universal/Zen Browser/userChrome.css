@@ -67,6 +67,10 @@ image.tab-icon-overlay {
 html#main-window body hbox#zen-main-app-wrapper hbox#browser toolbox#navigator-toolbox.browser-toolbox-background hbox#titlebar toolbar#TabsToolbar.browser-toolbar.browser-titlebar hbox.toolbar-items hbox#TabsToolbar-customization-target.customization-target tabs#tabbrowser-tabs div#vertical-pinned-tabs-container {
     overflow: visible !important;
 }
+hbox#tabbrowser-arrowscrollbox-periphery {
+	  margin-top: 0 !important;
+	  margin-bottom: 2px !important;
+}
 
 /* === ESSENTIALS BAR === */
 #zen-essentials-container .tabbrowser-tab .tab-stack .tab-background {

@@ -170,6 +170,7 @@
 .tabs-container .tab.active.selected {
 	box-shadow: inset 0px -9px 6px -7px rgba(255, 255, 255, 0.4) !important;
 	border-radius: 7px !important;
+	border: 1px solid rgba(255, 255, 255, 0.4) !important;
 }
 /* Tabs horizontal spacing and border roundness */
 .tab {
@@ -206,21 +207,64 @@
 	padding-top: 2px !important;
 }
 
-/* Round border editor [TRYING] */
-/* .breadcrumbs-below-tabs
-	.breadcrumbs-control.backslash-path
-	.monaco-scrollable-element {
-	border-top-left-radius: 7px !important;
-	border-top-right-radius: 7px !important;
-}
-.monaco-split-view2.vertical {
-	border-bottom-left-radius: 7px !important;
-	border-bottom-right-radius: 7px !important;
-	overflow: hidden !important;
-} */
+/* === CURSOR === */
 
-/* Add right or left margin */
-/* .monaco-split-view2.horizontal .monaco-scrollable-element .split-view-container {
-	padding-left: 5px !important;
-	padding-right: 5px !important;
-} */
+/* Remove the X button in "Edit" toolbar */
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable.vs-dark > div.lines-content.monaco-editor-background > div.view-zones > div.inlineDiffViewZone > div > div > div > div:nth-child(2) > div:nth-child(1) {
+	display: none !important;
+}
+#terminal > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.pane-body.integrated-terminal > div.monaco-split-view2.horizontal > div.monaco-scrollable-element > div.split-view-container > div > div > div > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div > div.prompt-bar-container > div > div > div:nth-child(1) {
+	display: none !important;
+}
+
+/* Status bar */
+footer.part.statusbar.status-border-top {
+	--status-border-top-color: #21252b !important;
+}
+
+/* Chat sidebar */
+#workbench\.panel\.composerViewPane2 > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.pane-body > div > div > div:nth-child(1) > div > div:nth-child(2) > div.scrollable-div-container.undefined > div {
+	padding-left: 1px !important;
+	padding-right: 1px !important;
+}
+#workbench\.panel\.aichat > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.pane-body > div > div > div:nth-child(2) > div:nth-child(2) {
+	display: none !important;
+}
+.markdown-section-toolbar-internal {
+	/* Translate to upward 2px */
+	transform: translateY(-12px) !important;
+}
+
+/* Dropdown menu */
+#workbench\.parts\.sidebar > div > div > div:nth-child(1) > div > div > div > div {
+	font-size: 16px !important;
+}
+#workbench\.parts\.sidebar > div > div > div:nth-child(1) > div > div > div:last-child > .codicon {
+	font-size: 19px !important;
+}
+#workbench\.parts\.sidebar > div > div > div:nth-child(1) > div {
+	/* Remove the border */
+	border: none !important;
+}
+#workbench\.parts\.sidebar > div > div > div:nth-child(1) > div > div:nth-child(2) > div > div > div:nth-child(1) > span:nth-child(1) {
+	/* Remove display */
+	display: none !important;
+} 
+#workbench\.parts\.sidebar > div > div > div:nth-child(1) > div > div:nth-child(2) > div > div > div:nth-child(1) > span:nth-child(2) {
+	/* Remove display */
+	display: none !important;
+} 
+#workbench\.parts\.sidebar > div > div > div:nth-child(1) > div > div:nth-child(2) {
+	/* Add border at all sides */
+	border: 1px solid #3e4452 !important;
+}
+
+/* Empty space below chat */
+#workbench\.panel\.aichat > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.pane-body > div > div > div.conversations > div > div > div > div > div:nth-child(1) > div > div > div > div:nth-child(3) {
+	display: none !important;
+}
+
+/* Terminal */
+#terminal > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.pane-body.integrated-terminal > div.monaco-split-view2.horizontal > div.monaco-scrollable-element > div.split-view-container > div > div > div > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div > div.prompt-bar-container {
+	display: none !important;
+}
