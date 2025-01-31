@@ -258,6 +258,9 @@ footer.part.statusbar.status-border-top {
 	/* Add border at all sides */
 	border: 1px solid #3e4452 !important;
 }
+#workbench\.parts\.sidebar > div > div > div:nth-child(1) > div > div:nth-child(2) > div > div > div:nth-child(1) {
+	font-size: 13px !important;
+}
 
 /* Empty space below chat */
 #workbench\.panel\.aichat > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.pane-body > div > div > div.conversations > div > div > div > div > div:nth-child(1) > div > div > div > div:nth-child(3) {
