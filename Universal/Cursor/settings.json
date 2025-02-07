@@ -297,5 +297,6 @@
 	"terminal.integrated.cursorStyleInactive": "none",
 	"notebook.compactView": false,
 	"notebook.markup.fontSize": 13,
-	"notebook.output.fontFamily": "12"
+	"notebook.output.fontFamily": "12",
+	"workbench.statusBar.visible": false
 }

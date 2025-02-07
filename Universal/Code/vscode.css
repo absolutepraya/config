@@ -212,7 +212,42 @@
 	transform: translate(0, 2px) !important;
 }
 
+/* Titlebar */
+.action-item.command-center-center {
+	border-width: 0px !important;
+	background-color: transparent !important;
+}
+#workbench\.parts\.titlebar > div > div.titlebar-center > div > div > div > div > ul > li.action-item.command-center-center > div > div > ul > li > span.codicon.codicon-search.search-icon {
+	display: none !important;
+}
+.search-label {
+	font-family: 'Fragment Mono' !important;
+	/* font-weight: bolder !important; */
+}
+.search-label::before {
+	display: inline-block;
+	margin-right: 6px;
+	content: '📦';
+}
+
 /* === CURSOR === */
+
+/* Sidebar 1 */
+#workbench\.view\.explorer > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.pane-header.expanded > div.actions {
+	display: none !important;
+}
+#workbench\.view\.explorer > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div > h3 {
+	font-family: 'Fragment Mono' !important;
+	margin-left: 10px !important;
+}
+.twisties-container-in-view-pane-header.twisty-container.codicon-view-pane-container-collapsed.codicon, .twisties-container-in-view-pane-header.twisty-container.codicon-view-pane-container-expanded.codicon {
+	display: none !important;
+}
+
+/* Titlebar */
+#workbench\.parts\.titlebar > div > div.titlebar-right > div.action-toolbar-container > div > div > ul {
+	display: none !important;
+}
 
 /* Remove the X button in "Edit" toolbar */
 #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element > div.split-view-container > div > div > div.editor-container > div > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable.vs-dark > div.lines-content.monaco-editor-background > div.view-zones > div.inlineDiffViewZone > div > div > div > div:nth-child(2) > div:nth-child(1) {
@@ -236,8 +271,11 @@ footer.part.statusbar.status-border-top {
 	display: none !important;
 }
 .markdown-section-toolbar-internal {
-	/* Translate to upward 2px */
 	transform: translateY(-12px) !important;
+}
+#markdown-code-block-editor-vs\.editor\.ICodeEditor\:4 > div > div > div:nth-child(1) {
+	top: 0px !important;
+	border-top: 1px #34383f solid !important;
 }
 
 /* Dropdown menu */
