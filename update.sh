@@ -16,6 +16,10 @@ cat ~/custom.omp.json > /mnt/c/Users/daffa/Documents/Config/Ubuntu/custom.omp.js
 cat /mnt/c/Users/daffa/AppData/Roaming/Code/User/settings.json > /mnt/c/Users/daffa/Documents/Config/Universal/Code/settings.json
 cat /mnt/c/Users/daffa/AppData/Roaming/Code/User/keybindings.json > /mnt/c/Users/daffa/Documents/Config/Universal/Code/keybindings.json
 
+# cursor
+cat /mnt/c/Users/daffa/AppData/Roaming/Cursor/User/settings.json > /mnt/c/Users/daffa/Documents/Config/Universal/Cursor/settings.json
+cat /mnt/c/Users/daffa/AppData/Roaming/Cursor/User/keybindings.json > /mnt/c/Users/daffa/Documents/Config/Universal/Cursor/keybindings.json
+
 # homebrew
 brew list > /mnt/c/Users/daffa/Documents/Config/Universal/Homebrew/brew_list.txt
 

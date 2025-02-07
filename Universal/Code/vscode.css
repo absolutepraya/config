@@ -207,6 +207,11 @@
 	padding-top: 2px !important;
 }
 
+/* Notebook (Jupyter IPYNB) */
+.notebook-toolbar-container {
+	transform: translate(0, 2px) !important;
+}
+
 /* === CURSOR === */
 
 /* Remove the X button in "Edit" toolbar */

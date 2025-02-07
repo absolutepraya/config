@@ -169,9 +169,6 @@ alias grep='rg'
 # --- shortcut for update & upgrading apt and brew
 alias aptbrew='sudo apt-get update -y && sudo apt-get upgrade -y && brew update && brew upgrade'
 
-# --- shortcut for python3
-alias py='python3'
-
 # --- open vsc in windows instead
 code() {
      /mnt/c/Users/daffa/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe "$@" >/dev/null 2>&1 & disown
@@ -179,8 +176,8 @@ code() {
 # alias code='/mnt/c/Users/daffa/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe "$@" >/dev/null 2>&1'
 
 # --- use windows' python
-# alias pyw='/mnt/c/Python312/python.exe'
-# alias pipw='/mnt/c/Python312/Scripts/pip3.exe'
+alias py='/mnt/c/Users/daffa/AppData/Local/Microsoft/WindowsApps/python.exe'
+alias pip='/mnt/c/Users/daffa/AppData/Local/Microsoft/WindowsApps/pip3.exe'
 
 # --- git command aliases
 alias gitp='git push -u origin'
